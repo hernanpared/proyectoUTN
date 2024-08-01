@@ -39,8 +39,9 @@
         </tr>
       </thead>
       <tbody>
+        {{#each novedades}}
         <tr>
-          <th scope="row">1</th>
+          <th scope="row">{{id}}</th>
           <td>titulo</td>
           <td class="text-end">
             <a class="btn btn-secondary" href="">
@@ -51,6 +52,7 @@
             </a>
           </td>
         </tr>
+        {{/each}}
       </tbody>
     </table>
   </div>
