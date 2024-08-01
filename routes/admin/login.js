@@ -7,7 +7,7 @@ router.get('/', function (req, res, next) {
     });
 });
 
-var usuariosModel = require('../../modulos/usuariosModel');
+var usuariosModel = require('../../models/usuariosModel');
 
 router.post('/', async (req, res, next) => {
     try {
@@ -42,3 +42,4 @@ router.get('/logout', function (req, res, next) {
   
 
 module.exports = router;
+
