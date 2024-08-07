@@ -49,4 +49,14 @@ router.post("/agregar", async (req, res, next) => {
   }
 });
 
+
+//eliminar novedad
+
+router.get('/eliminar/:id', async (req, res, next) => {
+  var id = req.params.id;
+  await novedadesModel.deleteNovedadeByID(id);
+  res.redirect('/admin/novedades');
+});
+
+
 module.exports = router;
